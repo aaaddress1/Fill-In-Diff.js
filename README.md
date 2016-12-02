@@ -18,14 +18,19 @@ The Dallas-born investigative journalist was arrested in 2012 from his home whil
 The Dallas-born investigative journalist was arrested in 2012 from his home while he was in middle of online chat after posting tweets and YouTube video threatening revenge against FBI agent. aaaddress1@gmail.com
 
 4. Your Code (Javascript)
-`src = fs.readFileSync('./sample.txt','utf8');`
-`usr = fs.readFileSync('./usrAns.txt','utf8');`
-`lack= getPlantExamText(src);`
-`fs.writeFileSync('./Exam.txt',lack, 'utf8');`
-`diffExam(src, lack, usr,function(htmlOut) {`
-`  fs.writeFile('./display.html', htmlOut);`
-`});`
-`
+<code>
+src = fs.readFileSync('./sample.txt','utf8');
+
+usr = fs.readFileSync('./usrAns.txt','utf8');
+
+lack= getPlantExamText(src);
+
+fs.writeFileSync('./Exam.txt',lack, 'utf8');
+
+diffExam(src, lack, usr,function(htmlOut) {
+  fs.writeFile('./display.html', htmlOut);
+});
+</code>
 
 5. display.html
 ![](demo.png)
