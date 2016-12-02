@@ -17,20 +17,16 @@ The Dallas-born investigative journalist was arrested in 2012 from his home whil
 > hello world Barrett Brown, journalist, formerly served as an unofficial spokesman for hacktivist collective Anonymous, finally walked free from prison on Tuesday morning after serving more than four years behind bars.
 The Dallas-born investigative journalist was arrested in 2012 from his home while he was in middle of online chat after posting tweets and YouTube video threatening revenge against FBI agent. aaaddress1@gmail.com
 
-4. Your Code (Javascript)
-<code>
-src = fs.readFileSync('./sample.txt','utf8');
+Your Code (Javascript)
 
-usr = fs.readFileSync('./usrAns.txt','utf8');
+    src = fs.readFileSync('./sample.txt','utf8');
+    usr = fs.readFileSync('./usrAns.txt','utf8');
+    lack= getPlantExamText(src);
+    fs.writeFileSync('./Exam.txt',lack, 'utf8');
+    diffExam(src, lack, usr,function(htmlOut) {
+      fs.writeFile('./display.html', htmlOut);
+    });
 
-lack= getPlantExamText(src);
-
-fs.writeFileSync('./Exam.txt',lack, 'utf8');
-
-diffExam(src, lack, usr,function(htmlOut) {
-  fs.writeFile('./display.html', htmlOut);
-});
-</code>
 
 5. display.html
 ![](demo.png)
